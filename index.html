@@ -148,7 +148,76 @@
       </div>
     </header>
     <div class="content">
-      <div class="sidebar"></div>
+      <div class="sidebar">
+        <div class="sidebar-top">
+          <h1>Para você</h1>
+          <svg
+            width="100%"
+            height="100%"
+            fill="#fff"
+            version="1.1"
+            viewBox="0 0 20 20"
+            x="0px"
+            y="0px"
+            role="presentation"
+            aria-hidden="true"
+            focusable="false"
+            class="ScIconSVG-sc-1q25cff-1 jpczqG"
+          >
+            <g>
+              <path
+                d="M16 16V4h2v12h-2zM6 9l2.501-2.5-1.5-1.5-5 5 5 5 1.5-1.5-2.5-2.5h8V9H6z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="sidebar-top">
+          <h2>CANAIS SEGUIDOS</h2>
+          <svg width="20" height="20" fill="#fff" viewBox="0 0 20 20">
+            <path
+              d="M11 6 7 2 3 6l1.5 1.5L6 6v6h2V6l1.5 1.5L11 6Zm6 8-4 4-4-4 1.5-1.5L12 14V8h2v6l1.5-1.5L17 14Z"
+            />
+          </svg>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <div class="item-icon">
+                <img
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/77bb404c-2e9a-43e9-aa2f-fbf531fcef00-profile_image-70x70.png"
+                  alt=""
+                />
+              </div>
+              <div class="item-center">
+                <span>Nakamatetako</span>
+                <span>Habbo Hotel</span>
+              </div>
+              <div class="item-right">
+                <span class="status"></span>
+                <span>11 mil</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="item-icon">
+                <img
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/77bb404c-2e9a-43e9-aa2f-fbf531fcef00-profile_image-70x70.png"
+                  alt=""
+                />
+              </div>
+              <div class="item-center">
+                <span>Nakamatetako</span>
+                <span>Habbo Hotel</span>
+              </div>
+              <div class="item-right">
+                <span class="status"></span>
+                <span>11 mil</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
       <main></main>
     </div>
     <footer></footer>
@@ -277,10 +346,89 @@
 
     .sidebar {
       height: 100%;
-      width: 240px;
+      width: 285px;
       background-color: #1f1f23;
     }
 
+    .sidebar .sidebar-top {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      padding: 0px 10px;
+    }
+
+    .sidebar .sidebar-top h1 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .sidebar .sidebar-top h2 {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .sidebar .sidebar-top svg {
+      height: 22px;
+      width: 22px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      margin: 5px 0px;
+    }
+
+    ul li a {
+      display: flex;
+      text-decoration: none;
+      justify-content: space-between;
+      margin: 0px 10px;
+      padding: 5px 0px;
+
+    }
+
+    ul li:hover{
+      background-color: #3030309f;
+    }
+
+    .status {
+      background-color: red;
+      border-radius: 50%;
+      width: 0.5rem;
+      height: 0.5rem;
+      display: inline-block;
+      position: relative;
+    }
+    .item-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+    }
+    .item-icon img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+    .item-center {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-center span:nth-of-type(1) {
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .item-center span:nth-of-type(2) {
+      font-weight: 200;
+      font-size: 14px;
+      opacity: 90%;
+    }
+    .item-right span:nth-of-type(2) {
+      font-weight: 200;
+    }
     main {
       height: 100%;
       width: 100%;
